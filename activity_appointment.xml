@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFF"
+            android:hint="Appointment Date"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFF"
+            android:hint="Appointment Time"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edt_problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFF"
+            android:gravity="top"
+            android:hint="Problem"
+            android:lines="5"
+            android:padding="10dp" />
+
+        <FrameLayout
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imf_set_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF"/>
+
+            <TextView
+                android:id="@+id/txt_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Choose Image"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="17dp"
+            android:background="@color/colorAccent"
+            android:padding="12dp"
+            android:text="Submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
